@@ -185,6 +185,73 @@ let n = p.indexOf(455);
 console.log(n);
 VM10869:4 4
 
+let city = [1,2,2,4,5,6,6];
+city[7]='sam';
+console.log(city);
+
+let num=[1,2,3,4,5,6];
+typeof num;
+'object'
+
+let name = ['krish','tom','JEN',1,3,56];
+console.log(name);
+console.log(name.indexOf('tom'));
+console.log(name.lastIndexOf('some'));
+console.log(name.includes('krish'));
+console.log(name.includes('some'));
+VM5521:2 (6) ['krish', 'tom', 'JEN', 1, 3, 56]
+VM5521:3 1
+VM5521:4 -1
+VM5521:5 true
+VM5521:6 false
+
+//objects in arrays
+let courses = [
+    {id:1, name:'maths'},
+     {id:2, name:'physics'},
+     {id:3, name:'chemistry'},
+     {id:4, name:'Biology'},
+     {id:5, name:'english'},
+     {id:1, name:'sanskrit'},
+    ];
+console.log(courses);
+console.log(courses[1]);
+VM6175:9 (6) [{…}, {…}, {…}, {…}, {…}, {…}]
+VM6175:10 {id: 2, name: 'physics'}
+
+//arrays.map
+//Arrays map
+const numbers=[1,2,3,4,5,6];
+const filtered =numbers.filter(n=>n>=0);
+const items=filtered.map(n=>'<li>'+n+'</li>');
+console.log(items);
+VM6904:5 
+(6) ['<li>1</li>', '<li>2</li>', '<li>3</li>', '<li>4</li>', '<li>5</li>', '<li>6</li>']
+0: "<li>1</li>"
+1: "<li>2</li>"
+2: "<li>3</li>"
+3: "<li>4</li>"
+4: "<li>5</li>"
+5: "<li>6</li>"
+length: 6
+[[Prototype]]: Array(0)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 --------------------------------------------------------
 Functions
 
@@ -209,9 +276,119 @@ place();
 VM12570:2 enter
 
 functions continues
-*/
-let name ='junetwonine';
-console.log(name);
+function test() {
+    console.log("hello world");
+}
+test();
+VM357:2 hello world
+undefined
+console.log(test);
+VM425:1 ƒ test() {
+    console.log("hello world");
+}
+undefined
+console.log(test());
+VM357:2 hello world
+
+function mul(a,b){
+    return a*b;
+}
+mul();
+NaN
+
+function mul(a,b){
+    return a*b;
+}
+console.log(mul(2,3));
+VM414:4 6
+undefined
+
+mul;
+ƒ mul(a,b){
+    return a*b;
+}
+
+mul();
+NaN
+
+console.log(mul(444,55));
+VM577:1 24420
+undefined
+
+let sam=mul(23,54);
+console.log(sam);
+VM720:2 1242
+undefined
+
+function test2(num1, num3) { //parameters
+    return num1+num3;
+}
+
+let sum1 =test2(3,4);//arguments
+console.log(sum1);
+VM1068:6 7
+undefined
+
+test2(122,345);
+467
+
+console.log(sum1);
+VM1320:1 7
+undefined
+
+console.log(test2(23,34));
+VM1441:1 57
+undefined
+
+console.log(test2);
+VM1516:1 ƒ test2(num1, num3) { //parameters
+    return num1+num3;
+}
+undefined
+
+console.log(test2());
+VM1598:1 NaN
+undefined
+
+//Arrow functions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
